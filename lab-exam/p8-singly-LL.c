@@ -67,7 +67,7 @@ void deleteFrontEnd(){
         struct Node * temp;
         temp = head;
         head = head->next;
-        free(temp->next);
+        free(temp);
         
     }
 }
