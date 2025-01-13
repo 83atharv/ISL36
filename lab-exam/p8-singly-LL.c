@@ -21,7 +21,7 @@ void insertRearEnd(int data){
     temp -> data = data;
     temp -> next = NULL;
     if(head == NULL){
-        temp->next = head;
+        head = temp;
         return;
     }else{
         struct Node* cur;
