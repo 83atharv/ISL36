@@ -40,5 +40,5 @@ void main(){
     printf("Enter valid postfix expression : ");
     scanf("%s", postfix);
     double result = evaluatePostfixExp(postfix);
-    printf("Answer = %lf\n",result);
+    printf("Answer = %.2lf\n",result);
 }

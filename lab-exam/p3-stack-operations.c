@@ -23,7 +23,7 @@ void display(){
 }
 
 int popPal(){
-    if(top == -1) printf("\nStack underflow\n");
+    if(top == -1) return 0;
     else return st[top--];
 }
 
@@ -40,7 +40,7 @@ void checkPal(int x){
     else printf("Not a palindrome");
 }
 
-void main(){
+int main(){
     push(10);
     push(20);
     push(30);

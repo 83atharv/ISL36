@@ -6,7 +6,11 @@ int fib(int n){
 }
 
 int main(){
-    int f = fib(7);
-    printf("%d",f);
-    return 0;
+    int n;
+    printf("Enter n : ");
+    scanf("%d", &n);
+    for(int i = 0 ; i<n ; i++){
+        printf("%d ", fib(i) );
+    }
+    printf("\n");
 }
