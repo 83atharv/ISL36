@@ -114,6 +114,29 @@ void display(){
             cur=cur->next;
         }
     }
+    printf("\n");
+}
+
+void search(int item){
+    if(head == NULL){
+        printf("Empty list\n");
+        return;
+    }
+    else{
+        struct Node*cur = head;
+        int count = 0;
+        while(cur!=NULL){
+            if(cur->data == item){
+                printf("Found item at node %d\n",count+1);
+                return;
+            }
+            else{
+                cur = cur->next;
+                count++;
+            }
+        }
+        printf("Item not found\n");
+    }
 }
 
 int main(){
@@ -127,4 +150,6 @@ int main(){
     insertAtPosition(25,2);
     deleteNodeAtIndex(3);
     display();
+    search(30);
+    search(50);
 }
